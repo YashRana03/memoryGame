@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+    color: aliceblue;
+    background-image: url(./images/background2.jpg);
+    background-size: cover;
+    font-family: 'Kalam', cursive;
+}
+
+h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+}
+
+img {
+    width: 250px;
+    padding: 10px;
+    object-fit: contain;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 100px auto;
+   
+}
