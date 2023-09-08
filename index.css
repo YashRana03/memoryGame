@@ -33,3 +33,42 @@ img {
     margin: 100px auto;
    
 }
+
+.dialogue {
+    position: absolute;
+    left: 50%;
+    top:  50%;
+    margin-left: -150px;
+    margin-top: -150px;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    color: black;
+    border: 1px solid black;
+    
+}
+
+.dialogue button {
+    background-color: #522E8E;
+    padding: 15px 25px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.dialogue button:hover {
+    cursor: pointer;
+    background-color: #2F0F6C;
+}
+
+.dialogue img {
+    width: 35px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+

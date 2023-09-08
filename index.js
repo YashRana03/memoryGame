@@ -71,11 +71,21 @@ const girdEl = document.getElementById("grid")
 const movesEl = document.getElementById("moves")
 let allCardEl;
 let count = 0
-let firstTime = true;
 
-imgArr.sort((a, b) => 0.5 - Math.random())
+
+
 
 function createGrid() {
+    moves = 0
+    girdEl.innerHTML = ""
+    console.log(girdEl)
+    count = 0
+    allCardEl = []
+    movesEl.textContent = 0
+    cardMatches = 0
+    cardsPicked = []
+    cardsPickedId = []
+    imgArr.sort((a, b) => 0.5 - Math.random())
     imgArr.forEach(()=> {
         let img = document.createElement("img")
         img.setAttribute("src", blank)
@@ -115,7 +125,30 @@ function checkMatch() {
     
 
     if(cardMatches == 6) {
-        alert("You have won. Congratulations!!!")
+        const dialogueWindowEl = document.getElementById("dialogue")
+        dialogueWindowEl.setAttribute("class", "dialogue")
+        const dialogueH2El  = document.createElement("h2")
+        const dialogueH3El  = document.createElement("h3")
+        const dialogueButtonEl  = document.createElement("button")
+        const cross = document.createElement("img")
+        dialogueButtonEl.addEventListener("click", function() {
+            dialogueWindowEl.setAttribute("class", "nothing")
+            dialogueWindowEl.innerHTML = ""
+            createGrid()
+            
+        })
+        cross.src = "./images/cross.png"
+        cross.addEventListener("click", function() {
+            dialogueWindowEl.setAttribute("class", "nothing")
+            dialogueWindowEl.innerHTML = ""
+        })
+        dialogueWindowEl.appendChild(cross)
+        dialogueH2El.textContent = "Gongratulations! You Won!!!"
+        dialogueWindowEl.appendChild(dialogueH2El)
+        dialogueH3El.textContent = "Start new game?"
+        dialogueWindowEl.appendChild(dialogueH3El)
+        dialogueButtonEl.textContent = "Start Game"
+        dialogueWindowEl.appendChild(dialogueButtonEl)
         
     }
 
