@@ -79,6 +79,7 @@ function createGrid() {
     console.log(girdEl)
     let count = 0
     allCardEl = []
+    moves = 0
     movesEl.textContent = 0
     cardMatches = 0
     cardsPicked = []
