@@ -20,7 +20,8 @@ h1 {
 }
 
 img {
-    width: 250px;
+    width: 200px;
+    height: 200px;
     padding: 10px;
     object-fit: contain;
 }
@@ -31,6 +32,7 @@ img {
     justify-content: center;
     max-width: 1200px;
     margin: 100px auto;
+   
    
 }
 
@@ -71,4 +73,48 @@ img {
     right: 5px;
     cursor: pointer;
 }
+
+
+
+@media  screen and (max-width: 840px) {
+    img {
+        width: 150px;
+        height: 150px;
+    }
+    
+}
+
+
+@media  screen and (max-width: 540px) {
+    img {
+        width: 125px;
+        height: 125px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media  screen and (max-width: 415px) {
+    img {
+        width: 115px;
+        height: 115px;
+    }
+    
+}
+
+@media  screen and (max-width: 385px) {
+    img {
+        width: 100px;
+        height: 100px;
+    }
+    
+}
+
+
+
 

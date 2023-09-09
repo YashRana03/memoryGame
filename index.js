@@ -90,8 +90,6 @@ function createGrid() {
         let img = document.createElement("img")
         img.setAttribute("src", blank)
         img.setAttribute("id", count)
-        img.style.height = 250;
-        
         img.setAttribute("class", "y")
         img.addEventListener("click", flipCard)
         girdEl.appendChild(img)
