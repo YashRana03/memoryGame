@@ -69,8 +69,8 @@ img {
 .dialogue img {
     width: 35px;
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: -75px;
+    right: 15px;
     cursor: pointer;
 }
 
