@@ -1,123 +1,109 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    padding: 50px 20px;
-    background-color: white;
-    color: aliceblue;
-    background-image: url(./images/background2.jpg);
-    background-size: cover;
-    font-family: 'Kalam', cursive;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding: 50px 20px;
+  background-color: white;
+  color: aliceblue;
+  background-image: url(./images/background2.jpg);
+  background-size: cover;
+  font-family: "Kalam", cursive;
 }
 
 h1 {
-    font-family: 'Indie Flower', cursive;
-    font-size: 40px;
+  font-family: "Indie Flower", cursive;
+  font-size: 40px;
 }
 
 img {
-    width: 200px;
-    height: 200px;
-    padding: 10px;
-    object-fit: contain;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  object-fit: contain;
 }
 
 .flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 100px auto;
-   
-   
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 100px auto;
 }
 
 .dialogue {
-    position: absolute;
-    left: 50%;
-    top:  50%;
-    margin-left: -150px;
-    margin-top: -150px;
-    width: 300px;
-    height: 300px;
-    padding: 20px;
-    background-color: whitesmoke;
-    border-radius: 10px;
-    color: black;
-    border: 1px solid black;
-    
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  color: black;
+  border: 1px solid black;
 }
 
 .dialogue button {
-    background-color: #522E8E;
-    padding: 15px 25px;
-    border-radius: 8px;
-    color: white;
-    font-weight: bold;
-    border: none;
+  background-color: #522e8e;
+  padding: 15px 25px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  border: none;
 }
 
 .dialogue button:hover {
-    cursor: pointer;
-    background-color: #2F0F6C;
+  cursor: pointer;
+  background-color: #2f0f6c;
 }
 
 .dialogue img {
-    width: 35px;
-    height: 35px;
-    position: relative;
-    left: 120px;
-    top: -10px;
-    cursor: pointer;
-    
+  width: 35px;
+  height: 35px;
+  position: relative;
+  left: 120px;
+  top: -10px;
+  cursor: pointer;
 }
 
-
-
-@media  screen and (max-width: 840px) {
-    img {
-        width: 150px;
-        height: 150px;
-    }
-    
+@media screen and (max-width: 840px) {
+  img {
+    width: 150px;
+    height: 150px;
+  }
 }
 
+@media screen and (max-width: 540px) {
+  img {
+    width: 125px;
+    height: 125px;
+  }
 
-@media  screen and (max-width: 540px) {
-    img {
-        width: 125px;
-        height: 125px;
-    }
-    
-    h1 {
-        font-size: 30px;
-    }
+  h1 {
+    font-size: 30px;
+  }
 
-    h2 {
-        font-size: 20px;
-    }
+  h2 {
+    font-size: 20px;
+  }
 }
 
-@media  screen and (max-width: 415px) {
-    img {
-        width: 115px;
-        height: 115px;
-    }
-    
+@media screen and (max-width: 415px) {
+  img {
+    width: 115px;
+    height: 115px;
+  }
 }
 
-@media  screen and (max-width: 385px) {
-    img {
-        width: 100px;
-        height: 100px;
-    }
-    
+@media screen and (max-width: 385px) {
+  img {
+    width: 100px;
+    height: 100px;
+  }
 }
-
-
-
-
